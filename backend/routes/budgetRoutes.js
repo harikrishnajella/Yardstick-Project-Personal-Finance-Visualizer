@@ -12,7 +12,7 @@ import {
 const router = express.Router();
 
 router.get('/', getBudgets);
-router.get('/summary', getBudgetSummary); // optional endpoint for budget vs actual chart
+router.get('/summary', getBudgetSummary); 
 router.post('/', setBudget);
 router.put('/:id', updateBudget);
 router.delete('/:id', deleteBudget);

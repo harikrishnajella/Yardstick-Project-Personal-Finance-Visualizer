@@ -32,7 +32,7 @@ export const createTransaction = async (req, res) => {
     });
 
     const saved = await newTransaction.save();
-    res.status(201).json(saved);
+    res.status(201).json({saved, message: "New transaction added"});
   } catch (err) {
     res.status(400).json({ error: 'Invalid transaction data' });
   }
@@ -51,7 +51,7 @@ export const updateTransaction = async (req, res) => {
     const updated = await Transaction.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
     });
-    res.json(updated);
+    res.json({updated, message: "Transaction updated"});
   } catch (err) {
     res.status(400).json({ error: 'Failed to update transaction' });
   }

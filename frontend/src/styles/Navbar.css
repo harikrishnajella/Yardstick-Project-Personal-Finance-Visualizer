@@ -1,0 +1,16 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 10px;
+    background-color:#0d6efd;
+    color: #ffffff;
+}
+
+.button{
+    border: none;
+    margin-right: 10px;
+    background-color: transparent;
+    color: #ffffff;
+}

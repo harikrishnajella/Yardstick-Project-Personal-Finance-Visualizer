@@ -7,12 +7,12 @@ const transactionSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  date: {
-    type: Date,
-    required: true,
-  },
   description: {
     type: String,
+    required: true,
+  },
+  date: {
+    type: Date,
     required: true,
   },
   category: {
