@@ -9,7 +9,7 @@ import TransactionForm from '../components/TransactionForm';
 const Transactions = () => {
   const [transactions, setTransactions] = useState([])
 
-  let url = 'http://localhost:5000/api'
+  let url = "https://personal-finance-visualizer-backend.onrender.com/api"
   
   // fetching data
     const fetchData = async () => {

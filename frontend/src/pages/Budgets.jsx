@@ -9,7 +9,7 @@ const Budgets = () => {
   const [transactions, setTransactions] = useState([]);
   const [categories, setCategories] = useState([]);
 
-  let url = "http://localhost:5000/api"
+  let url = "https://personal-finance-visualizer-backend.onrender.com/api"
 
   const fetchAll = async () => {
     const [b, t, c] = await Promise.all([

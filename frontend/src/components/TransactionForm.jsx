@@ -14,7 +14,7 @@ const TransactionForm = ({ transactionDetails, fetchTransactions, close }) => {
   const [showForm, setShowForm] = useState(true)
 
 
-  let url = "http://localhost:5000/api"
+  let url = "https://personal-finance-visualizer-backend.onrender.com/api"
 
   const fetchData = async () => {    
     const options = {

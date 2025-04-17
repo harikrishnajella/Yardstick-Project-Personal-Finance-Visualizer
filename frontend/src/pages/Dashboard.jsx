@@ -8,7 +8,7 @@ import Navbar from './Navbar'
 const Dashboard = () => {
   const [transactions, setTransactions] = useState([]);
 
-  let url = "http://localhost:5000/api"
+  let url = "https://personal-finance-visualizer-backend.onrender.com/api"
 
   useEffect(() => {
     fetch(`${url}/transactions`)
